@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disclaimer - The Lorem Ipsum</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+            /* För att undvika horisontell scrollbar på grund av 100% bredd */
+        }
+
+
+        .disclaimer-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60%;
+            /* Justera bredden efter behov */
+            padding: 20px;
+            border: 2px solid #fff;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+            text-align: center;
+            background-color: #000;
+        }
+
+
+        button {
+            background-color: #fff;
+            color: #000;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+            margin-right: 10px;
+            /* Justera marginalen för att separera knapparna */
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="disclaimer-container">
+        <h2>Disclaimer</h2>
+        <p>
+            Denna webbplats och all information samt handledningar som tillhandahålls här är endast avsedda för
+            utbildningsändamål.
+            Vi tar inget ansvar för eventuella olagliga eller oetiska handlingar som besökare till webbplatsen kan
+            utföra.
+            Användningen av informationen på denna webbplats sker på egen risk.
+        </p>
+        <!-- Lägg till övrig text från din disclaimer här -->
+        <button onclick="acceptDisclaimer()">Jag accepterar</button>
+        <button onclick="goToCyberSecurityLaw()">Läs mer om cybersäkerhetslagen</button>
+    </div>
+
+
+    <script>
+        function acceptDisclaimer() {
+            localStorage.setItem('disclaimerAccepted', 'true');
+            window.location.href = 'index.html';
+        }
+
+
+        function goToCyberSecurityLaw() {
+            window.location.href = 'https://www.msb.se/sv/amnesomraden/informationssakerhet-cybersakerhet-och-sakra-kommunikationer/nis-direktivet/lag-forordning-och-foreskrifter/';
+        }
+    </script>
+</body>
+
+
+</html>

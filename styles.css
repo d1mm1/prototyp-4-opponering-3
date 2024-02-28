@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+
+.container {
+    margin-top: 50px;
+    /* Add extra space above the white block when not scrolled */
+}
+
+
+footer {
+    border: 6px solid #000000;
+    background: #000000;
+    color: #ffffff;
+    font-size: 27px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+
+main {
+    display: flex;
+    width: 100%;
+    height: 2900px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin-top: -300px;
+}
+
+
+
+
+/* Justera bakgrundsfärgen för att göra det tydligare */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    /* Ljusgrå bakgrundsfärg */
+}
+
+
+.omoss {
+    color: white;
+    margin-left: 50px;
+    font-family: 'Kanit', sans-serif;
+    /* Use Kanit font for consistency */
+}
+
+
+
+.omoss h3 {
+    font-size: 32px;
+    /* Increase font size for the heading */
+}
+
+
+.omoss h4,
+.omoss h5 {
+    font-size: 28px;
+    /* Adjust font size for subheadings */
+    margin-bottom: 5px;
+    /* Reduce the bottom margin */
+}
+
+
+.omoss p {
+    font-size: 18px;
+    /* Adjust font size for paragraphs */
+    margin-bottom: 10px;
+    /* Reduce the bottom margin */
+}
+
+.omossEL {
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    /* Use Kanit font for consistency */
+}
+
+.omossEL h3 {
+    font-size: 32px;
+    margin-left: 50px;
+    padding-bottom: 50px;
+    /* Increase font size for the heading */
+}
+
+
+.omossEL h4,
+.omossEL h5 {
+    font-size: 28px;
+    /* Adjust font size for subheadings */
+    margin-bottom: 5px;
+    /* Reduce the bottom margin */
+    margin-left: 50px;
+}
+
+
+.omossEL p {
+    font-size: 18px;
+    /* Adjust font size for paragraphs */
+    margin-bottom: 10px;
+    /* Reduce the bottom margin */
+    margin-left: 50px;
+}
+
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.slideshow-text-container {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    margin-top: -650px;
+}
+
+#slideshow {
+    max-width: 100%;
+    margin-right: 300px;
+}
+
+#slideshow img {
+    max-width: 450px;
+    height: 450px;
+}
+
+#text-container {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #000000;
+    border-radius: 8px;
+    max-width: 800px;
+}
+
+#text-container h2 {
+    color: #ffffff;
+    font-family: 'Kanit', sans-serif;
+    font-size: 44px;
+    margin-bottom: 10px;
+}
+
+#text-container p {
+    color: #ffffff;
+    font-size: 19px;
+    line-height: 1.6;
+    font-family: 'Kanit', sans-serif;
+
+}
+
+#text-container {
+    color: white;
+    font-size: 24px;
+    font-family: Kanit;
+    box-sizing: border-box;
+    padding-right: 2%;
+    margin-left: 200px;
+}
+
+
+
+.textvid1 {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+
+.video-container {
+    width: 48%;
+    box-sizing: border-box;
+    margin-right: 100px;
+}
+
+
+.text1 {
+    position: relative;
+    width: 48%;
+    color: white;
+    font-size: 24px;
+    font-family: Kanit;
+    box-sizing: border-box;
+    padding-right: 2%;
+    margin-left: 80px;
+}
+
+
+.textvid1 h1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: -60px;
+    /* Adjust this value as needed to position the h1 above the text */
+    margin-left: 150px;
+}
+
+
+
+
+.textvid2 {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin-left: 30px;
+}
+
+
+.text2 {
+    position: relative;
+    width: 48%;
+    color: white;
+    font-size: 24px;
+    font-family: Kanit;
+    box-sizing: border-box;
+    margin-right: 50px;
+    margin-top: 50px;
+}
+
+
+.textvid2 h2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: -30px;
+    margin-left: 840px;
+    /* Adjust this value as needed to position the h1 above the text */
+}
+
+
+.video2 {
+    width: 48%;
+    box-sizing: border-box;
+    margin-left: 1%;
+}
+
+
+.black-background {
+    background-color: #000;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.black-backgroundEL {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+}
+
+
+
+
+#navbar {
+    text-align: center;
+    padding: 80px 10px;
+    background-color: #fff;
+    transition: 0.4s;
+    width: 100%;
+    position: fixed;
+    top: 150px;
+    z-index: 99;
+    box-shadow: none;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+
+#navbarEL {
+    text-align: center;
+    padding: 30px 10px;
+    background-color: #fff;
+    transition: 0.4s;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    box-shadow: none;
+    top: 0;
+    flex-direction: row;
+    align-items: flex-end;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+#navbar-right {
+    float: right;
+
+
+}
+
+
+#navbar-right a {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 24px;
+    color: #000;
+    text-decoration: none;
+    margin-right: 40px;
+}
+
+
+#navbar-right a:hover {
+    color: #af1180;
+}
+
+
+#navbar #logo {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 67px;
+    color: #000;
+    transition: 0.4s;
+    text-decoration: none;
+    margin-left: 500px;
+}
+
+
+#navbarEL #logoEL {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 25px;
+    color: #000;
+    text-decoration: none;
+    margin-left: 300px;
+}
+
+
+#navbar-rightEL {
+
+
+    float: right;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+
+}
+
+
+#navbar-rightEL a:hover {
+    color: #af1180;
+}
+
+
+#navbar-rightEL a {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 24px;
+    color: #000;
+    text-decoration: none;
+    margin-right: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+/* ------------------animation pil test----------------------------------- */
+#section05 a {
+    position: fixed;
+    top: 440px;
+    left: 6%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    transform: rotate(-45deg);
+    animation: sdb04 2s infinite;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #ffffff;
+    z-index: 999;
+
+
+}
+
+
+
+
+@-webkit-keyframes sdb04 {
+    0% {
+        -webkit-transform: rotate(-45deg) translate(0, 0);
+    }
+
+
+    20% {
+        -webkit-transform: rotate(-45deg) translate(-10px, 10px);
+    }
+
+
+    40% {
+        -webkit-transform: rotate(-45deg) translate(0, 0);
+    }
+}
+
+
+
+
+@keyframes sdb04 {
+    0% {
+        transform: rotate(-45deg) translate(0, 0);
+    }
+
+
+    20% {
+        transform: rotate(-45deg) translate(-10px, 10px);
+    }
+
+
+    40% {
+        transform: rotate(-45deg) translate(0, 0);
+    }
+}
+
+
+
+
+/* ------------------för mobil----------------------------------- */
+
+
+
+
+@media only screen and (max-width: 768px) {
+
+
+    .container {
+        height: auto;
+        min-height: 100vh;
+    }
+
+
+}

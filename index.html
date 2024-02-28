@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Headlines - The Lorem Ipsum</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-css-reset/dist/reset.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+</head>
+
+
+
+
+<body>
+    <div class="black-background">
+        <div id="navbar">
+            <a href="index.html" id="logo">Cybersäkerhet</a>
+            <div id="navbar-right">
+                <a href="index.html">Startsida</a>
+                <a href="anonymitet.html">Anonymitet</a>
+                <a href="#">Wi-fi</a>
+                <a href="#">fiskning</a>
+                <a href="#">Extra</a>
+                <a href="#">Skydd</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <main>
+        <div class="omoss">
+            <h3>Om oss</h3>
+            <h4>Dimitri Vodianoi</h4>
+            <p class="dim">Elev på Pauliskolan.
+                Teknikprogrammet.
+                18 år.
+                utbfilvod@skola.malmo.se
+            </p>
+            <h5>Olivier Zyc</h5>
+            <p class="oli">Elev på Pauliskolan.
+                Teknikprogrammet.
+                18 år.
+                utbkaczyc@skola.malmo.se
+            </p>
+        </div>
+
+        <div class="slideshow-text-container">
+            <div id="slideshow">
+                <img src="f1.png" alt="Slide 1">
+                <img src="f2.png" alt="Slide 2">
+                <img src="f3.png" alt="Slide 3">
+                <img src="f4.png" alt="Slide 4">
+                <img src="f5.png" alt="Slide 5">
+            </div>
+
+            <div id="text-container">
+                <h2>Formuläret</h2>
+                <p>Nedan kan ni se svar på vår formulär. Svaren kommer från Pauliskolans elever. Meningen med
+                    formuläret var att undersöka elevernas kunskaper inom dator- och nätverksteknik. </p>
+            </div>
+        </div>
+        <div class="textvid1">
+            <h1>Väkommna!</h1>
+            <p class="text1">Välkomna till vårt gymnasiearbete om cybersäkerhet och etisk hacking. Vi är två elever som
+                går
+                teknik och valde dator- och nätverksteknik, samt programmering som vårt ämne för gymnasiearbete. På
+                följande
+                sida kommer det finnas olika tutorials om följande ämnen; fiskning, wi-fi, anonymitet, skydd och extra
+                såsom
+                flipper zero. Ämnen valdes utifrån vårt formulär som du kan titta på i samma sida.</p>
+
+
+            <section id="section05">
+                <a href="#section05"></a>
+                <div class="rum">
+                    <div class="video-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/dx6kFHb0BsA" frameborder="0"
+                            allowfullscreen></iframe>
+
+
+                    </div>
+            </section>
+        </div>
+        <div class="textvid2">
+            <h2>Dina första steg | Virtuell Maskin</h2>
+            <p class="text2">En Virtual Machine (VM) är som en dator inuti din dator, den låter dig köra olika
+                operativsystem på samma maskin. Kali Linux är ett specialiserat datorkompletterande program som används
+                av säkerhetsexperter för att testa och förbättra datorsystemssäkerhet. I denna videon kommer du få se
+                hur du installerar och sätter upp dessa program på både Windows och Mac. Nedan kan du se systemkrav som
+                din dator måste uppfylla:
+
+                macOS 10.15 eller senare
+                En 64-bitars Intel-baserad Mac eller En 64-bitars Windows-dator
+                Minst 4 GB RAM
+
+                Rekommenderas minst 20-30 GB ledigt lagringsutrymme för installationen av både Virtual Machine och Kali
+                Linux, kan behövas mer med möjliga tillägg.</p>
+            <div class="video2">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/VoUJFUGFloA?si=wO2PT3rrvmjjzNSB"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+
+
+        </div>
+
+
+    </main>
+    <footer>
+        <p> Pauliskolan | TE21A | Dimitri Vodianoi & Olivier Zyc</p>
+    </footer>
+    </div>
+
+
+    <script>
+        $(function () {
+            $('a[href*="#section05"]').on('click', function (e) {
+                e.preventDefault();
+                $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top }, 500, 'linear');
+            });
+
+
+            window.onscroll = function () {
+                scrollFunction();
+            };
+
+
+            function scrollFunction() {
+                const navbar = document.getElementById("navbar");
+                const logo = document.getElementById("logo");
+
+
+                if (window.scrollY > 100) {
+                    navbar.style.padding = "30px 10px";
+                    logo.style.fontSize = "25px";
+                    logo.style.marginRight = "0";
+                    logo.style.marginLeft = "20px";
+                    navbar.classList.add("scrolled");
+                    navbar.style.top = "0"; // Adjust the top property
+                    navbarRightlinks.css("margin-right", "40px");
+                } else {
+                    navbar.style.padding = "80px 10px";
+                    logo.style.fontSize = "67px";
+                    logo.style.marginLeft = "500px";
+                    navbar.classList.remove("scrolled");
+                    navbar.style.top = "200px"; // Adjust the top property back to 150px
+                    navbarRightlinks.css("margin-right", "40px");
+                    //innan scroll
+                }
+            }
+        });
+    </script>
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('#slideshow img');
+        const totalSlides = slides.length;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.style.display = i === index ? 'block' : 'none';
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            showSlide(currentSlide);
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            // Trigger the nextSlide function once the DOM content has loaded
+            nextSlide();
+
+            // Attach the click event listener to the slideshow
+            document.getElementById('slideshow').addEventListener('click', nextSlide);
+        });
+    </script>
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
